@@ -1,0 +1,35 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="profile.js" defer></script>
+  <title>User Authentication - Profile</title>
+</head>
+<body>
+
+  <header class="bg-dark text-white text-center py-3">
+    <h1>User Authentication</h1>
+  </header>
+
+  <section class="container mt-4">
+    <!-- Profile Page -->
+    <div class="page" id="profile" style="display: none;">
+      <div class="col-md-6 offset-md-3">
+        <h2>Welcome to your Profile</h2>
+        <p>Additional details:</p>
+        <ul>
+          <li><strong>Username:</strong> <span id="profileUsername"></span></li>
+          <li><strong>Age:</strong> <span id="profileAge"></span></li>
+          <li><strong>Date of Birth:</strong> <span id="profileDOB"></span></li>
+          <li><strong>Contact:</strong> <span id="profileContact"></span></li>
+        </ul>
+      </div>
+      <button onclick="showPage('login')" class="btn btn-danger col-md-6 offset-md-3">Logout</button>
+    </div>
+  </section>
+
+</body>
+</html>
