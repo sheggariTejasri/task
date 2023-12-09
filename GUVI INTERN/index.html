@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="register.js" defer></script>
+  <script src="login.js" defer></script>
+  <script src="profile.js" defer></script>
+  <title>User Authentication</title>
+</head>
+<body>
+
+  <!-- <header class="bg-dark text-white text-center py-3">
+    <h1>User Authentication</h1>
+  </header> -->
+
+  <section class="container mt-4">
+    <!-- Register Form -->
+    <div class="page" id="register">
+      <?php include 'register.html'; ?>
+    </div>
+
+    <!-- Login Form -->
+    <div class="page" id="login" style="display: none;">
+      <?php include 'login.html'; ?>
+    </div>
+
+    <!-- Profile Page -->
+    <div class="page" id="profile" style="display: none;">
+      <?php include 'profile.html'; ?>
+    </div>
+  </section>
+
+</body>
+</html>
